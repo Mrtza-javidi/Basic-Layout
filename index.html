@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      *{box-sizing:border-box;}
+      body{
+        margin:0px;
+        background-color: #e1e1e1;
+        font-family:arial;
+        font-size: 100%;
+        padding: 20px;
+      }
+      .header{
+        text-align: center;
+        padding: 5px 10px;
+        background-color:#fff;
+      }
+      div.topnav{
+        background-color: #555;
+        overflow: hidden;
+      }
+      .topnav a{
+        display: block;
+        float: left;
+        color:white;
+        text-decoration: none;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 10px;
+      }
+      .topnav a:hover{background-color: #eee;color:#333;}
+      .row-body:after{
+        content:"";
+        clear:both;
+        display:table;
+      }
+      .col-left-body-content{
+        width: 75%;
+        float: left;
+        background-color: #e1e1e1;
+      }
+      .card{
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .img-content-left{
+        background-size: cover;
+        background-attachment: fixed;
+        height:500px;
+        margin: 0;
+      }
+      .col-right-body-content{
+        float: left;
+        width:25%;
+        background-color: #e1e1e1;
+        padding-left:20px;
+        text-align: center;
+      }
+      .img-content-right{
+        width:70%;
+        height:100px;
+      }
+      .card-sticky{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        bottom: 0;
+      }
+      .footer{
+        margin-top: 20px ;
+        background-color: #aaa;
+        text-align:  center;
+        padding: 20px;
+        clear: both;
+      }
+      .footer:after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .footer div{
+        display: inline-block;
+        width: 300px;
+        margin: 20px;
+      }
+      @media screen and (max-width:1000px){
+        .col-left-body-content,.col-right-body-content{float: none;width: 100%;padding: 0}
+        .img-content-right{width:300px;height:200px;}
+      }
+      @media screen and (max-width:700px){
+        .img-content-left{height:400px;}
+      }
+      @media screen and (max-width:500px){
+        .topnav a{float: none;}
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section -->
+    <div class="header">
+      <div>My Logo</div>
+      <h1>My Website</h1>
+    </div>
+    <!-- Top navigationbar -->
+    <div class="topnav">
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">Product</a>
+      <a href="#">About</a>
+    </div>
+      <!-- body content -->
+      <div class="row-body">
+        <!-- lEFT Content body -->
+          <div class="col-left-body-content">
+            <a name="card-1">
+              <div class="card">
+                <div class="img-content-left" style="background-image: url(b.jpg);"></div>
+                <h2>TITLE HEADING</h2>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </a>
+            <a name="card-2">
+              <div class="card">
+                <div class="img-content-left" style="background-image: url(a.jpg);"></div>
+                <h2>TITLE HEADING</h2>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </a>
+            <a name="card-3">
+              <div class="card">
+                <div class="img-content-left" style="background-image: url(c.jpg);"></div>
+                <h2>TITLE HEADING</h2>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </a>
+          </div>
+          <!-- lEFT Content body -->
+          <div class="col-right-body-content">
+            <div class="card">
+              <a href="#card-1">
+                <img src="b.jpg" class="img-content-right"/>
+                <h2>TITLE HEADING</h2>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim...</p>
+              </a>
+            </div>
+          </div>
+            <div class="col-right-body-content card-sticky">
+            <div class="card">
+              <a href="#card-2">
+                <img src="a.jpg" class="img-content-right"/>
+                <h2>TITLE HEADING</h2>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim...</p>
+              </a>
+            </div>
+          <div class="card">
+            <a href="#card-3">
+              <img src="c.jpg" class="img-content-right"/>
+              <h2>TITLE HEADING</h2>
+              <p>Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim...</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <h2 style="border-bottom:1px solid gray;">About Us</h2>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div>
+          <h2 style="border-bottom:1px solid gray;">About Us</h2>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+        <div>
+          <h2 style="border-bottom:1px solid gray;">About Us</h2>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+      </div>
+  </body>
+</html>
